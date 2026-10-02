@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="CSS/FAQ.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What is StudyBuddy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            StudyBuddy is an online learning platform that helps individuals enhance their skills through online courses, video lectures, step-by-step roadmaps, and collaborations with industry professionals.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Who is StudyBuddy for?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            StudyBuddy is for anyone looking to learn new skills, improve existing ones, or gain practical knowledge in their desired field—whether you're a student, professional, or hobbyist.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What makes StudyBuddy different from other online learning platforms?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            StudyBuddy offers more than just courses. We provide personalized roadmaps, video lectures, and direct collaboration opportunities with field experts. This ensures practical, goal-oriented learning tailored to your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What types of courses are available on StudyBuddy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We offer courses in a variety of fields, including technology, merketing, design, personal development, and creative skills. New courses are added regularly to meet diverse learning needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Are the courses beginner-friendly?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes! Many of our courses are designed for beginners, but we also provide intermediate and advanced-level content to ensure continuous learning as you progress.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I find courses for any specific skill?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p> 
+            Browse through our categorized sections on the bootcamp page, such as Technology, Business, Creative Arts, or Personal Development, to find courses related to your interest.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What are the roadmaps offered by StudyBuddy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our roadmaps are structured learning paths that guide you from beginner to expert in specific skills. They include curated resources, timelines, and tasks to ensure focused learning.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            How can I collaborate with professionals?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Through our platform, you can connect with professionals by joining webinars, participating in Q&A sessions (Open Chat), and seeking mentorship from experts in your chosen field trough search bars.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            How can I create or delete my profile?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            After signing in, you are given four options in the Profile Section.<br>
+            <li>Create Profile</li>
+            <li>Edit Profile</li>
+            <li>View Profile</li>
+            <li>Delete Profile</li>
+          </p>
+        </div>
+      </div>
+
+    <p>Still have questions?</p>
+    <button class="accept_btn" onclick="document.location='contact.html'">Contact Us</button>
+
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
